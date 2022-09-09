@@ -1,7 +1,10 @@
 from django.http import HttpResponse
 from django.template import loader
 from AppCoder.models import Curso
+from django.shortcuts import render
 
+def inicioweb(request):
+    return render(request, "inicio1.html")
 
 def home(self, name):
     return HttpResponse(f"Hola soy {name}")
